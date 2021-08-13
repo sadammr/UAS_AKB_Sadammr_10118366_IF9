@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.bottomnavigation">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/mobil"
+        android:label="UASAKB"
+        android:roundIcon="@drawable/mobil"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BottomNavigation">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCsjZZu_GekeL-ZTMvAXDxCeLQTSw7Dyhk"/>
+
+        <activity android:exported="true" android:name="com.example.bottomnavigation.SplashScreen">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.bottomnavigation.ViewPager"/>
+        <activity android:name="com.example.bottomnavigation.MainActivity" />
+        <activity android:name="com.example.bottomnavigation.MapsFragment"
+            tools:ignore="Instantiatable" />
+        <activity android:name="com.example.bottomnavigation.SearchFragment"
+            tools:ignore="Instantiatable" />
+        <activity android:name="com.example.bottomnavigation.ProfilFragment"
+            tools:ignore="Instantiatable" />
+    </application>
+
+</manifest>
